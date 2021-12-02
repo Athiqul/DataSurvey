@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&family=Open+Sans&display=swap');
+
+body{
+    background: linear-gradient(#93a5cf 30%, #e4efe9
+    50%);
+    /*font-family: 'Noto Serif Bengali', serif;*/
+font-family: 'Open Sans', sans-serif;
+overflow-x: hidden;
+
+}
+input, h1, p{
+    font-family: 'Noto Serif Bengali',serif;
+}
+input,select{
+    border-radius: 10px !important;
+    overflow-x: hidden;   
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+#other_o,#district,.childrens{
+    display:none;
+}
+option{
+   text-align: center;
+   max-width:100%;
+   overflow-x: hidden;
+
+}
+span{
+    font-weight: bold;
+}
+#other_o.active{
+    display:block;
+}
+#district.active{
+    display: block;
+}
+.childrens.active{
+    display: block;
+}
+
+
+

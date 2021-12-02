@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&family=Open+Sans&display=swap');
+
+body{
+    background: linear-gradient(#93a5cf 30%, #e4efe9
+    50%);
+    background-repeat: no-repeat;
+    /*font-family: 'Noto Serif Bengali', serif;*/
+font-family: 'Open Sans', sans-serif;
+overflow-x: hidden;
+
+}
+h1,p{
+    font-family: 'Noto Serif Bengali', serif;
+}
+.login-part{
+    border-radius: 10px;
+    box-shadow: -5px 5px 3px  rgba(0,0,0,0.5);
+    position: relative;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.img-container{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 0px 10px;
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff ;
+    background-color:red;
+}
+
+form{
+    margin-top:10px;
+    overflow: hidden;
+}
+.form-group{
+    position: relative;
+    
+}
+
+input{
+    padding: 10px !important;
+    font-size: 18px !important;
+    border-radius: 10px !important;
+    
+}
+input:focus{
+    outline: 0px !important;
+    border:0px !important;
+
+}
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    font-size: 30px;
+    padding:0px 5px;
+    background: #c0392b !important;
+			color: white !important;
+			border: 0 !important;
+			border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.passhide{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+a.btn:active{
+    transform: scale(1.1);
+
+}

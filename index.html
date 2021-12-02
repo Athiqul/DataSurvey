@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Manual Style Sheet-->
+    <link rel="stylesheet" href="index.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--BootStrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/logo.png">
+    <title>Above IT</title>
+</head>
+<body>
+<div class="container text-center">
+    <h1 class="text-center text-light mt-3 mb-3">লগিন করুন
+    </h1>
+    <p>আপনার ইউজার নাম এবং পাসওয়ার্ড দিয়ে লগিন করুন</p>
+    <!--Login form-->
+    <div class="login-part bg-success">
+        <div class="img-container">
+            <div class="img">
+                
+            </div>
+        </div>
+        <form action="post">
+            <div class="form-group" id="username_field">
+                <input type="text" id="username" placeholder="username" class="form-control text-center text-muted" required>
+                 <span class="icon"><i class="fas fa-user-tie"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="password"  id="password" class="form-control text-center text-muted" value="password" required>
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <span class="passhide" ><i class="fas fa-eye-slash" id="eye"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" checked="checked" name="remember" id="remember">
+                <label for="remember"  class="form-check-label" >Remember me?</label>
+            </div>
+            <a type="button" id="login" class="btn btn-danger" href="#">Login</a>
+        </form>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2013-21 Copyright:
+      <a class="text-dark" href="https://www.abovebd.com">Above It</a>
+    </div>
+  </footer>
+<!--All Js files-->
+    <!--Jquery Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!--Popper Js-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--Bootstrap Js-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--Manuel Js for Manipulating Dom-->
+<script src="index.js"></script>
+
+</body>
+</html>

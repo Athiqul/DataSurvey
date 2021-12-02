@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Manual Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--BootStrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="/image/logo.png">
+    <title>Above IT</title>
+</head>
+<body>
+
+ <!--Navbar-->
+ <nav class="navbar navbar-light bg-secondary justify-content-between">
+    <a class="navbar-brand">
+        <img src="image/logo.png" alt="Company logo" >
+    </a>
+    <form class="form-inline">
+      <a href="index.html" class="btn btn-danger my-2 my-sm-0" type="submit">Logout</a>
+    </form>
+  </nav>
+  <br>
+<div class="container text-center">
+   
+<h1 class="text-center bg-warning ">আপনাকে স্বাগতম ইউজার ওয়ান</h1>
+<p class="lead text-center text-dark">সঠিক এবং নির্ভুল ভাবে তথ্য প্রদান করার জন্য অনুরোধ রইলো
+</p>
+<!--form-->
+    <form action="post" id="namefield">
+        <div class="form-group warning">
+            <input type="text" id="name" name="name"class="form-control text-center bng" placeholder="বাংলায় নাম লিখুন" required>
+        </div>
+        <div class="form-group ">
+             <input type="tel" id="mobile" name="mobile" class="form-control text-center" placeholder="01712312312" pattern="[0]{1}[1]{1}[0-9]{9}" required>        
+        </div>
+        <div class="form-group">
+            <input type="number" id="ward_no" name="ward_no" class="form-control text-center" placeholder="ওয়ার্ড নাম্বার(ইংরেজি সংখ্যায়)" min="1" max="57" required>
+        </div>
+        <div class="form-group">
+            <select name="occupation" id="occupation" class="form-control text-center" placeholder="পেশা">
+                <option value="0" readonly>--পেশা--</option>
+                <option value="1" >গার্মেন্টস কর্মী</option>
+                <option value="2">রিক্সা চালক</option>
+                <option value="3">মুদির দোকানদার</option>
+                <option value="4">গৃহকর্মী</option>
+                <option value="5">ড্রাইভার</option>
+                <option value="6" id="others" class="others">অন্যান্য</option>
+            </select>
+        </div>
+        <div class="form-group " id="other_o">
+            <input type="text" id="others_occupation" name="occupation" class="form-control text-center" placeholder="পেশা লিখুন" >
+        </div>
+        <div class="form-group">
+            <select name="division" id="division" class="text-center form-control ">
+                <option value="0">--গ্রাম্য বিভাগ-- </option>
+                <option value="1" id="dhaka">ঢাকা</option>
+                <option value="2" id="khulna">খুলনা</option>
+                <option value="3" id="rajshahi">রাজশাহী</option>
+                <option value="4" id="barisal">বরিশাল</option>
+                <option value="5" id="rangpur">রংপুর</option>
+                <option value="6" id="mymenshingh">ময়মনসিংহ</option>
+                <option value="7" id="sylhet">সিলেট</option>
+                <option value="8" id="chattogram">চট্টগ্রাম</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="district" id="district" class="text-center form-control">
+                 <option value="0">জেলা নির্বাচন</option>
+            </select>
+        </div>
+        <div class="text-center" id="gender">
+            <span class="p mb-0 pr-3 ">লিঙ্গ:</span>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+            <label class="form-check-label" for="male">পুরুষ
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+            <label class="form-check-label" for="female">মহিলা</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="others_gender" value="option3">
+            <label class="form-check-label" for="others_gender">অন্যান্য</label>
+          </div>
+              </div>
+             <br>
+              <div class="text-center" id="maritial_status">
+                <span class="p mb-0 pr-3 ">বৈবাহিক অবস্থা:</span>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="maritial_status" id="married" value="1">
+                <label class="form-check-label" for="married">বিবাহিত</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="maritial_status" id="unmarried" value="2">
+                <label class="form-check-label" for="married">অবিবাহিত</label>
+              </div>
+                  </div>
+                  <br>
+                  <div class="form-group text-center childrens">
+                       <label for="child_no">সন্তানের সংখ্যা(যদি বিবাহিত)</label>
+                      <select name="childrens" id="child_no" class="text-center form-control">
+                          <option value="1">একজন</option>
+                          <option value="2">দুইজন</option>
+                          <option value="3">তিনজন</option>
+                          <option value="4">চারজন</option>
+                          <option value="5">পাঁচজন</option> 
+                         <option value="6">ছয় বা ততোধিক</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="e_name" name="e_name" class="form-control text-center" placeholder="তথ্য প্রদানকারীর ইউজার নাম" readonly>
+                </div>
+        <button type="submit" class="btn btn-primary btn-block">তথ্য সংরক্ষন করুণ</button>
+            
+    </form>
+</div>
+<footer class="bg-light text-center text-lg-start mt-5">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2013-21 Copyright:
+      <a class="text-dark" href="https://www.abovebd.com">Above It</a>
+    </div>
+  </footer>
+
+    <!--All Js files-->
+
+<!--Jquery Js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<!--Popper Js-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--Bootstrap Js-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--Manuel Js for Manipulating Dom-->
+<script src="script.js"></script>
+    
+</body>
+</html>
